@@ -44,6 +44,7 @@ if not OPENAI_AVAILABLE:
 ACCESS_KEY = 'YOUR AWS ACCESS KEY HERE'
 SECRET_KEY = 'YOUR AWS SECRET KEY HERE'
 AWS_AVAILABLE = ACCESS_KEY != 'YOUR AWS ACCESS KEY HERE' and SECRET_KEY != 'YOUR AWS SECRET KEY HERE'
+polly_client = None  # Initialize polly_client to None
 
 if AWS_AVAILABLE:
     try:
@@ -642,9 +643,20 @@ def speak_override(text, language='english'):
     if ui_instance:
         ui_instance.write_to_terminal(f"TARS: {text}\n")
     
-    audio_stream = generate_tars_speech(text, language)
-    modified_sound = modify_voice(audio_stream)
-    play_audio(modified_sound)
+    if AWS_AVAILABLE and polly_client:
+        try:
+            audio_stream = generate_tars_speech(text, language)
+            modified_sound = modify_voice(audio_stream)
+            play_audio(modified_sound)
+        except Exception as e:
+            original_print(f"Error during speech synthesis or playback: {e}")
+            if ui_instance:
+                ui_instance.write_to_terminal(f"Speech Error: {e}\n")
+    else:
+        # If AWS is not available or polly_client is None, TARS's response is text-only in the UI.
+        # The text is already written to ui_instance.write_to_terminal above.
+        # Add a log to the original console for debugging.
+        original_print(f"TARS (voice synthesis unavailable, AWS_AVAILABLE={AWS_AVAILABLE}): {text}")
 
 # Modify main function to use the Tkinter UI
 def main():
