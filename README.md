@@ -61,7 +61,8 @@ Detailed guide: [Bundle Mode](https://garnet-indigo-717.notion.site/Bundle-Mode-
 
 - [Raspberry Pi Setup](https://garnet-indigo-717.notion.site/Raspberry-Pi-Setup-for-TARS-29b81163f50b80feaad2cbecfa0b935d)
 - [API Key Walkthrough](https://garnet-indigo-717.notion.site/API-Keys-Document-29b81163f50b80829ffce12c44a07c28)
+- [Controller Setup](https://garnet-indigo-717.notion.site/Controller-Setup-on-Raspberry-Pi-29b81163f50b80f58dbdf06fd3bb51ee)
 
 ---
-Physical wiring notes will be published separately—keep an eye on Notion for those diagrams.
+Physical wiring notes will be published separately-keep an eye on Notion for those diagrams.
 
