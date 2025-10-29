@@ -46,6 +46,8 @@ python3 TARSmaster.py
 ```
 This starts the GUI console, speech recognition, controller polling, and servo layer in one process.
 
+Detailed guide: [TARSmaster Mode](https://www.notion.so/TARSmaster-Mode-29b81163f50b8015a006eaeec8a196b2)
+
 ### Bundle (modular / headless)
 ```
 cd bundle
@@ -53,11 +55,12 @@ python3 run_master.py   # or run mechanism.py / controller.py / voice.py individ
 ```
 Use this on the Pi when you need lightweight scripts without the Tkinter front-end.
 
+Detailed guide: [Bundle Mode](https://www.notion.so/Bundle-Mode-Modular-Deployment-29b81163f50b8060ba8ffa51a6e1ef1b)
+
 ## Documentation
-- [`docs/pi-setup.txt`](docs/pi-setup.txt) – Raspberry Pi OS flashing, dependency install, and systemd tips.
-- [`docs/master-guide.md`](docs/master-guide.md) – TARSmaster workflow and troubleshooting.
-- [`docs/bundle-guide.md`](docs/bundle-guide.md) – Bundle mode usage for headless deployments.
-- [`docs/api-keys.md`](docs/api-keys.md) – How to obtain and manage OpenAI, AWS Polly, and OpenWeatherMap keys.
+
+- [Raspberry Pi Setup](https://www.notion.so/Raspberry-Pi-Setup-for-TARS-29b81163f50b80feaad2cbecfa0b935d)
+- [API Key Walkthrough](https://www.notion.so/API-Keys-Document-29b81163f50b80829ffce12c44a07c28)
 
 ---
-Physical wiring notes will be published separately—keep an eye on the Notion workspace for those diagrams.
+Physical wiring notes will be published separately—keep an eye on Notion for those diagrams.
