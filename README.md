@@ -46,7 +46,7 @@ python3 TARSmaster.py
 ```
 This starts the GUI console, speech recognition, controller polling, and servo layer in one process.
 
-Detailed guide: [TARSmaster Mode](https://www.notion.so/TARSmaster-Mode-29b81163f50b8015a006eaeec8a196b2)
+Detailed guide: [TARSmaster Mode](https://garnet-indigo-717.notion.site/TARSmaster-Mode-29b81163f50b8015a006eaeec8a196b2)
 
 ### Bundle (modular / headless)
 ```
@@ -55,12 +55,13 @@ python3 run_master.py   # or run mechanism.py / controller.py / voice.py individ
 ```
 Use this on the Pi when you need lightweight scripts without the Tkinter front-end.
 
-Detailed guide: [Bundle Mode](https://www.notion.so/Bundle-Mode-Modular-Deployment-29b81163f50b8060ba8ffa51a6e1ef1b)
+Detailed guide: [Bundle Mode](https://garnet-indigo-717.notion.site/Bundle-Mode-Modular-Deployment-29b81163f50b8060ba8ffa51a6e1ef1b)
 
 ## Documentation
 
-- [Raspberry Pi Setup](https://www.notion.so/Raspberry-Pi-Setup-for-TARS-29b81163f50b80feaad2cbecfa0b935d)
-- [API Key Walkthrough](https://www.notion.so/API-Keys-Document-29b81163f50b80829ffce12c44a07c28)
+- [Raspberry Pi Setup](https://garnet-indigo-717.notion.site/Raspberry-Pi-Setup-for-TARS-29b81163f50b80feaad2cbecfa0b935d)
+- [API Key Walkthrough](https://garnet-indigo-717.notion.site/API-Keys-Document-29b81163f50b80829ffce12c44a07c28)
 
 ---
 Physical wiring notes will be published separately—keep an eye on Notion for those diagrams.
+
